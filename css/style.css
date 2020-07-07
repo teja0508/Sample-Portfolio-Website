@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html,body {
+    line-height: 1;
+    font-family: 'PT Sans Narrow', sans-serif;
+    height: 100%;
+    background-color: #000000;
+    color:#ffffff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#particles-js{
+  position: fixed;
+  width: 100%;
+  height: 100%;  
+  z-index: 10;
+}
+
+
+/* HEADER STYLE */
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    text-align: center;
+    padding:25px 0;
+    z-index: 99;
+
+}
+header  {
+    background: black;
+    grid: none;
+}
+header ul li a{
+    color:#ffffff;
+  
+    text-transform: uppercase;
+    text-decoration: none;
+    margin:0 40px;
+    visibility: hidden;
+    transition: 0.4s ease-in-out;
+
+}
+
+header ul li a:hover{
+    color: darkgray;
+    transform: scale(1.3);
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 2px solid darkgray;
+}
+
+/* HEADER STICKY STYLE */
+
+.fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #000000;
+    z-index: 999;
+
+
+}
+
+section{
+    padding:60px 0;
+    height: 100%;
+    position: relative;
+}
+/* HOME STYLE */
+.home{
+    color:#ffffff;
+    padding: 0;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    background:url("/img/person-standing-on-staircase-2387660.jpg") no-repeat;
+    
+    background-size: cover;
+    background-position: center;
+    #background-color:#34495e;
+    background-attachment: fixed;
+    z-index: 9;
+}
+
+
+
+.home h1{
+    font-size: 68px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 15px 20px #000000b0 ;
+    margin-bottom: 0;
+    animation: glow 0.2s ease-in-out infinite alternate;
+    visibility: hidden;
+}
+
+
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+  }
+}
+
+
+
+.home h5{
+    background: #000;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10 px 0 50px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    visibility: hidden;
+    
+
+}
+
+/* SECTION TITLE STYLE */
+
+.section-title{
+    text-align:center;
+
+}
+.section-title h2{
+    display: inline-block;
+    font-size: 28px;
+    border-bottom: 1px solid; /*Underline under titles of each section of website*/
+    text-transform: uppercase;
+    padding: 20px 0 10px;
+
+}
+
+/* About Section Style */
+
+.about-info{
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    z-index: 99;
+}
+
+.about-info p{
+    line-height: 28px;
+    font-size: 18px;
+
+}
+.about-info .downloadbtn{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color:#ffffff10 ;
+    border: 1px solid #ffffff30;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 35px;
+    position: relative;
+    z-index: 999;
+    transition: 0.5s ease-in-out;
+}
+
+.about-info .downloadbtn:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+.timeline{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.timeline .col{
+    margin: 5px;
+    padding: 25px 5px;
+    border: 3px solid #ffffff30;
+    float: left;
+    transition: 0.3s ease-in-out;
+}
+
+.timeline .col:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.timeline h6{
+    margin: 15px 0 0;
+    font-size: 14px ;
+    line-height: 24px;
+}
+
+/*Skills section */
+
+.skills {
+    width: 60%;
+    margin : 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    z-index: 99;
+
+
+}
+
+.skills .skills-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.skills .col{
+    width: 40%;
+    margin: 25px 35px;
+    text-align:center;
+
+
+}
+
+.skills .col img{
+    max-width: 48px ;
+}
+
+.skills .col h3{
+    margin-top: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
+
+}
+
+.skills .col p{
+    line-height: 28px;
+}
+
+/* gallery section */
+
+.gallery{
+    width:60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    z-index: 99;
+}
+
+.gallery-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.gallery-info .col{
+   float: left;
+   width: 30%;
+    margin: 1%;
+
+}
+
+.gallery-info .col img{
+    max-width: 100%;
+}
+
+
+/* CONTACT */
+
+.contact{
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    z-index: 99;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.contact-info .textField{
+    width: 100%;
+    height: 50px;
+    border:1px solid #fff;
+    box-sizing:border-box ;
+    background-color: transparent;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.contact-info .messageField{
+    height: 200px;
+
+}
+.contact-info .submitButton{
+    background-color: #fff;
+    color:#000;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.8s ease-in-out;
+
+}
+
+.contact-info .submitButton:hover{
+    transform: scale(1);
+    font-size: 20px;
+    border: 2px solid black;
+    
+}
